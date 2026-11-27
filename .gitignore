@@ -3,7 +3,5 @@ venv/
 __pycache__/
 *.pyc
 .env
-.env.*
 .vscode/
-.pytest_cache/
 arbitration_logs.jsonl
