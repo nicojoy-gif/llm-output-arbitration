@@ -111,7 +111,12 @@ def run_arbitration(question, expected_answer, trusted_sources):
 
     print("\nArbitration decision saved.")
 
-    return winner
+    return {
+    "question": question,
+    "candidates": candidates,
+    "winner": winner,
+    "status": "success" if winner is not None else "failed"
+}
 
 
 def main():
